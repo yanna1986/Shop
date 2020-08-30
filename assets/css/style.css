@@ -104,6 +104,15 @@ h2 {
   font-family: "PT Serif", serif;
 }
 
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
 h2::after {
   position: absolute;
   width: 100%;
@@ -112,13 +121,9 @@ h2::after {
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
-h2::before {
-  position: absolute;
-  left: 0;
-  width: 30px;
-  margin: 0.25em 0 0 0;
-  content: "";
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+section {
+  position: relative;
+  overflow: hidden;
 }
 
 .header-logo {
@@ -166,7 +171,7 @@ h2::before {
   margin-bottom: 15px;
 }
 
-.new-films-item :hover .thumbnail {
+.new-films-item :hover.thumbnail {
   border-color: #df8a13;
   background-color: #df8a13;
 }
@@ -199,6 +204,94 @@ h2::before {
 
 .new-films-item__caption {
   text-align: center;
+}
+
+.top-week-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+
+.top-week-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-bottom: 15px;
+}
+
+.top-week-item :hover.thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
+.top-week-item :hover h3 {
+  color: #ffffff;
+}
+
+.top-week-item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.top-week-item__image {
+  width: 100%;
+}
+
+.top-week-item__title {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: bold;
+  -o-text-overflow: ellipsis;
+}
+
+.top-week-item__caption {
+  text-align: center;
+}
+
+.film-news-item h3 > a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.film-news-item .thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.film-news-item :hover .thumbnail {
+  background-color: #df8a13;
+}
+
+.film-news-item :hover h3 > a {
+  color: #df8a13;
+}
+
+.film-news-item :hover .btn-warning {
+  background-color: #df8a13;
+}
+
+.film-news-item__image {
+  width: 100%;
+}
+
+.film-news-item__text {
+  text-align: justify;
+}
+
+.film-news-item__button {
+  float: right;
+  margin-bottom: 30px;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -345,6 +438,10 @@ h2::before {
     font-size: 3rem;
     margin: -7.5px 0 45px;
   }
+  h2 {
+    margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -375,5 +472,9 @@ h2::before {
   h1 {
     font-size: 2rem;
     margin: 0 0 30px;
+  }
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
   }
 }

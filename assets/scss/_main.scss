@@ -18,29 +18,30 @@
   }
 
   &-item {
-    padding-right: $gap / 2;
-    padding-left: $gap / 2;
-    margin-bottom: $gap;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    margin-bottom: 15px;
 
-    :hover .thumbnail{
+    :hover.thumbnail{
       border-color: $color-accent;
       background-color: $color-accent ;
     }
     :hover h3{
       color: #ffffff;
     }
+    
 
-    &__thumbnail {
+    &__thumbnail{
       margin-bottom: 0;
       -webkit-transition: background-color 0.25s;
       -o-transition: background-color 0.25s;
       transition: background-color 0.25s;
-
-      
     }
+  
     &__image{
       width: 100%;
     }
+
     &__title{
       display: block;
       overflow: hidden;
@@ -54,6 +55,96 @@
     &__caption{
       text-align: center;
     }
+    
   }
 
+}
+.top-week
+{
+  &-row {
+    margin-left: -$gap / 2;
+    margin-right: -$gap / 2;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    margin-bottom: 15px;
+
+    :hover.thumbnail{
+      border-color: $color-accent;
+      background-color: $color-accent ;
+    }
+    :hover h3{
+      color: #ffffff;
+    }
+    
+
+    &__thumbnail{
+      margin-bottom: 0;
+      -webkit-transition: background-color 0.25s;
+      -o-transition: background-color 0.25s;
+      transition: background-color 0.25s;
+    }
+  
+    &__image{
+      width: 100%;
+    }
+
+    &__title{
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 1rem;
+      font-weight: bold;
+      -o-text-overflow: ellipsis;
+    }
+    &__caption{
+      text-align: center;
+    }
+    
+}
+
+}
+.film-news-item{
+
+  h3 > a{
+    -webkit-transition: color 0.25s;
+    -o-transition: color 0.25s;
+    transition: color 0.25s;
+  }
+
+
+  .thumbnail{
+    margin-bottom: 0;
+    -webkit-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+  }
+  :hover .thumbnail{
+    background-color: #f0ad4f;
+  }
+  :hover h3 > a{
+    color: $color-accent;
+  }
+  :hover .btn-warning{
+    background-color: $color-accent;
+  }
+  &__image{
+    width: 100%;
+  }
+  &__text{
+    text-align: justify;
+  }
+  &__button{
+    float: right;
+    margin-bottom: 30px;
+    -webkit-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+
+  }
 }

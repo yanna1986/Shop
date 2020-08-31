@@ -267,7 +267,7 @@ section {
 }
 
 .film-news-item :hover .thumbnail {
-  background-color: #df8a13;
+  background-color: #f0ad4f;
 }
 
 .film-news-item :hover h3 > a {
@@ -431,6 +431,34 @@ section {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer {
+  padding-top: 45px;
+  color: #fbfbfb;
+  background-color: #232323;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: #777777;
+}
+
+.footer a :hover {
+  color: white;
+}
+
+.footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer-fifth a {
+  color: #fbfbfb;
 }
 
 @media (min-width: 576px) {

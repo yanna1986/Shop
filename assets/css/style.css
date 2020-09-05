@@ -294,6 +294,31 @@ section {
   transition: background-color 0.25s;
 }
 
+.film-info {
+  font-size: 1.2em;
+}
+
+.film-info__wrapper {
+  white-space: nowrap;
+}
+
+.film-info__wrapper :not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-comment-form__button {
+  float: right;
+}
+
 .left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }
@@ -319,7 +344,7 @@ section {
 }
 
 .user-login__tabs a {
-  padding: 14px 5px 11px !important;
+  padding: 14px 5px 12px !important;
   color: #dddddd;
   border: none !important;
   background-color: transparent !important;
@@ -470,6 +495,14 @@ section {
     margin: 60px 0 45px 45px;
     font-size: 2.5rem;
   }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .header-logo__title {
+    margin-right: -15px;
+    letter-spacing: 0.33em;
+    font-size: 3.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -504,5 +537,13 @@ section {
   h2 {
     margin: 45px 0 30px 45px;
     font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .header-logo__title {
+    margin-right: -7.5px;
+    letter-spacing: 0.2em;
+    font-size: 2.5rem;
   }
 }

@@ -308,6 +308,7 @@ section {
 
 .film-info__badge {
   font-size: 0.8em;
+  margin-left: 5px;
 }
 
 .film-info__well {

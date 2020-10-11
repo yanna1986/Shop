@@ -1,15 +1,9 @@
+@import "libs/bootstrap/scss/bootstrap";
+
 @import "variables";
-@import "skin";
-
-@import "mixins-media";
-@import "mixins";
-@import "extends";
-
 @import "bootstrap-theming";
-
-@import "common";
 @import "header";
+@import "common";
 @import "main";
-@import "page";
-@import "sidebar";
+@import "aside";
 @import "footer";

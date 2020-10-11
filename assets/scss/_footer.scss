@@ -1,23 +1,15 @@
-.footer{
-    padding-top: 45px;
-    color: #fbfbfb;
-    background-color: #232323;
-    ul{
-        padding: 0;
-        list-style: none;
-    }
-    a{
-        color: #777777;
-        :hover{
-            color: white;
-        }
-    }
-}
 
-    .footer-fifth{
-        margin: 20px 0;
-        text-align: center;
-        a{
-            color: #fbfbfb;
-        }
-    }
+.page-footer {
+  background-color: rgba($color-light, 0.8);
+
+  &__copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    color: $color-dark;
+
+    font-size: 1.25rem;
+  }
+}

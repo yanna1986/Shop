@@ -1,17 +1,21 @@
 {
-  "systemParams": "win32-x64-64",
+  "systemParams": "win32-x64-72",
   "modulesFolders": [
     "libs"
   ],
   "flags": [],
   "linkedModules": [],
   "topLevelPatterns": [
-    "bootstrap@3.4.1",
-    "jquery@^3.3.1"
+    "@fortawesome/fontawesome-free@^5.12.1",
+    "bootstrap@^4.4.1",
+    "jquery@^3.4.1",
+    "popper.js@^1.16.1"
   ],
   "lockfileEntries": {
-    "bootstrap@3.4.1": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.1.tgz#c3a347d419e289ad11f4033e3c4132b87c081d72",
-    "jquery@^3.3.1": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+    "@fortawesome/fontawesome-free@^5.12.1": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.12.1.tgz#2a98fea9fbb8a606ddc79a4680034e9d5591c550",
+    "bootstrap@^4.4.1": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.4.1.tgz#8582960eea0c5cd2bede84d8b0baf3789c3e8b01",
+    "jquery@^3.4.1": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2",
+    "popper.js@^1.16.1": "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
   },
   "files": [],
   "artifacts": {}
